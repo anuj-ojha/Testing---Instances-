@@ -1,4 +1,4 @@
-# HotWax Commerce — Instance Types: Plain English Guide
+# HotWax Commerce — Instance Types: 
 
 > **Who is this for?** Anyone working with HotWax Commerce — whether you're in operations, QA, business, or tech. No technical background required.
 
@@ -10,9 +10,9 @@ Think of HotWax Commerce like a **retail store with three versions of its own fl
 
 | Version | Real-World Analogy |
 |---|---|
-| 🔧 **Development** | The back room where staff try new shelf arrangements — nothing is open to the public yet |
-| 🧪 **UAT (Staging)** | A fully dressed rehearsal store — looks real, used for final walkthroughs before opening |
-| 🛍️ **Production** | The actual open store — real customers, real transactions, real consequences |
+|  **Development** | The back room where staff try new shelf arrangements — nothing is open to the public yet |
+|  **UAT (Staging)** | A fully dressed rehearsal store — looks real, used for final walkthroughs before opening |
+|  **Production** | The actual open store — real customers, real transactions, real consequences |
 
 **Why three?** Because if something breaks in the back room, no customer ever sees it. You test, you rehearse, and only when everyone is confident — you go live.
 
@@ -20,12 +20,12 @@ Think of HotWax Commerce like a **retail store with three versions of its own fl
 
 ## The Three Instances at a Glance
 
-| | 🔧 Development | 🧪 UAT | 🛍️ Production |
+| |  Development |  UAT |  Production |
 |---|---|---|---|
 | **What it is** | Internal testing sandbox | Final rehearsal before go-live | The live, real business system |
 | **Who uses it** | Internal tech & dev teams | QA teams, stakeholders, clients | Operations staff & end customers |
 | **Data inside** | Fake/test data only | Anonymized copies of real data | Live customer data |
-| **Safety Level** | ✅ Fully safe to break | ⚠️ Handle with care | 🚨 Extreme caution — always |
+| **Safety Level** |  Fully safe to break |  Handle with care |  Extreme caution — always |
 | **If something breaks** | No impact | Minimal impact | Direct business impact |
 | **Backups** | Ad-hoc (as needed) | Weekly | Daily (automated) |
 | **Stability** | May be unstable | Stable and reliable | Always stable, 24/7 monitored |
@@ -33,7 +33,7 @@ Think of HotWax Commerce like a **retail store with three versions of its own fl
 
 ---
 
-## Instance 1 — 🔧 Development
+## Instance 1 —  Development
 
 ### What Is It?
 
@@ -54,13 +54,13 @@ Think of it as a workshop — tools are out, things might be unfinished, and tha
 
 Without a development instance, every test would happen on the live store — putting real customers and real orders at risk. The development instance gives the technical team room to experiment, fail safely, and improve before anything reaches the business.
 
-### ✅ The Golden Rule
+###  The Golden Rule
 
 > **"Break things freely here — that's what it's for. Just don't share it with clients or use real customer data."**
 
 ---
 
-## Instance 2 — 🧪 UAT (User Acceptance Testing)
+## Instance 2 —  UAT (User Acceptance Testing)
 
 ### What Is It?
 
@@ -83,13 +83,13 @@ Think of it as a preview screening before a film opens to the public.
 
 The UAT instance is the final checkpoint between testing and the real world. It catches anything the development team may have missed and ensures business stakeholders are confident before the change affects customers.
 
-### ⚠️ The Golden Rule
+###  The Golden Rule
 
 > **"Treat this almost like the live store. Test thoroughly, use realistic scenarios, and don't approve anything here that you wouldn't be comfortable putting in front of a real customer."**
 
 ---
 
-## Instance 3 — 🛍️ Production
+## Instance 3 —  Production
 
 ### What Is It?
 
@@ -111,7 +111,7 @@ There is no "undo" button here — every action has a real consequence.
 
 This is the entire reason the other two instances exist — to protect this one. Everything tested in Development and signed off in UAT eventually makes its way here, but only after it's been verified to be safe.
 
-### 🚨 The Golden Rule
+###  The Golden Rule
 
 > **"This is the live store. Every click matters. Never test here, never experiment here, and always double-check before making any change."**
 
@@ -123,9 +123,9 @@ Each HotWax app card gives you three access points. Here's where to find them:
 
 | Instance | How to Access | Example URL |
 |---|---|---|
-| 🔧 Development | Click the **bottom-left icon** on the app card | `https://dev-instance.hotwax.io` |
-| 🧪 UAT | Click the **bottom-right icon** on the app card | `https://demo-maarg-uat.hotwax.io` |
-| 🛍️ Production | Click the **main app card** itself | `https://demo-maarg.hotwax.io` |
+|  Development | Click the **bottom-left icon** on the app card | `https://dev-instance.hotwax.io` |
+|  UAT | Click the **bottom-right icon** on the app card | `https://demo-maarg-uat.hotwax.io` |
+|  Production | Click the **main app card** itself | `https://demo-maarg.hotwax.io` |
 
 ---
 
@@ -135,20 +135,20 @@ Not sure which instance to use? Ask yourself:
 
 ```
 Is this a new feature or an experiment?
-   → Use Development 🔧
+   → Use Development 
 
 Is this a test that needs stakeholder or client approval?
-   → Use UAT 🧪
+   → Use UAT 
 
 Is this a real business task with real customers involved?
-   → Use Production 🛍️
+   → Use Production 
 ```
 
 ---
 
 ## Common Mistakes to Avoid
 
-| ❌ Mistake | ✅ What to Do Instead |
+|  Mistake |  What to Do Instead |
 |---|---|
 | Testing a new feature directly in Production | Always test in Development first, then UAT |
 | Sharing the Development URL with a client | Use UAT for any client-facing demos or reviews |
@@ -162,10 +162,8 @@ Is this a real business task with real customers involved?
 
 | If you remember nothing else... |
 |---|
-| 🔧 **Development** = Safe to break. Internal only. No real data. |
-| 🧪 **UAT** = Almost real. For approvals and final checks before go-live. |
-| 🛍️ **Production** = This is real. Real customers. Be careful, always. |
+|  **Development** = Safe to break. Internal only. No real data. |
+|  **UAT** = Almost real. For approvals and final checks before go-live. |
+|  **Production** = This is real. Real customers. Be careful, always. |
 
 ---
-
-*For technical setup, infrastructure details, or onboarding support, contact your HotWax Commerce implementation team.*
